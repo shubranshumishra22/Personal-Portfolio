@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;   
+}
+body{
+    
+    color: #fff;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  /* CSS for individual pages */
+  #page1 { 
+    
+
+    
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+
+   
+
+    .container{
+        padding: 10px 10%;
+    }
+
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        position: absolute;
+            right: 0;
+        padding-right: 15px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 2px 9px;
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+        border-radius: 5px;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    
+    }
+
+   }
+  #page2 { background-color: #2b2b2b; }
+  #page3 { background-color: #1a1a1a; }
+  #page4 { background-color: black; }
+
+
+
+  .content {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.pic {
+    margin-right: 40px; /* Add space between image and text */
+}
+
+.pic img {
+    height: 700px;
+    width: 640px;
+    padding-top: -10px;
+    padding-bottom: 25px;
+    padding-left: -15px;
+}
+
+.header-text {
+    flex-grow: 1; /* Take remaining space */
+    color: black;
+    padding-right: -20px; 
+    
+}
+
+.header-text h1 {
+    
+    font-size: 40px;
+}
+.header-text p {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align vertically */
+    padding-right: 630px;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; /* Adjust the margin as needed */
+    
+
+}
+
+.social-icons img {
+    width: 80px; /* Adjust the size of the icons as needed */
+    height: auto;
+}
+
+
+.social-icons a:first-child img {
+    width: 40px; /* Adjust the size of the icons as needed */
+    height: auto;
+   
+}
+.social-icons a:last-child img {
+    width: 47px; /* Adjust the size of the icons as needed */
+    height: auto;
+    
+}
+.social-icons a:nth-child(2) img {
+    width: 60px; /* Adjust the size of the resume logo as needed */
+    height: auto;
+
+}
+
+.aboutme{
+    text-align: left;
+    font-size: 22.5px;
+    padding-top: 200px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.desig p {
+    font-size: 14px; /* Adjust font size as needed */
+    font-family: monospace; /* Optional: Use a monospaced font for a typewriter effect */
+    overflow: hidden; /* Hide overflow text */
+    border-right: 0.08em solid black; /* Typing cursor */
+    white-space: nowrap; /* Keep the text on one line */
+    margin: 0; /* Remove default margin */
+    animation: typing 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+/* Your existing styles go here */
+
+   /* Style for the image container */
+   .image-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+/* Style for the image links */
+.image-container a {
+    flex-shrink: 0; /* Prevents images from shrinking */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style for the images */
+.image-container img {
+    height: 250px;
+    width: 250px;
+    padding: 5px; /* Adjust padding */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+#page3 h1{
+    text-align: center;
+    padding-top: 20px;
+}
+#page4 h1{
+    text-align: center;
+    padding-top: 20px;
+}
+#page5 h1{
+    text-align: center;
+}
+
+/* Style for the image container */
+   .certificates {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+/* Style for the image links */
+.certificates a {
+    flex-shrink: 0; /* Prevents images from shrinking */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style for the images */
+.certificates img {
+    height: 250px;
+    width: 350px;
+    padding: 5px; /* Adjust padding */
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+/* courses */
+.courses {
+text-align: center;
+padding-top: 40px;
+font-family: 'Times New Roman', Times, serif;
+}
+.courses p{
+    text-decoration: underline;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+/* glitch affect */
+
+.glitch-three {
+    opacity: 0;
+    animation: fadeInAnimation 3s ease-in-out infinite; /* Set 'infinite' to repeat indefinitely */
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+  }
+  
+  .glitch-four{
+    opacity: 0;
+    animation: fadeInAnimation 3s ease-in-out infinite; /* Set 'infinite' to repeat indefinitely */
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    95% {
+      opacity: 1;
+    }
+  }
+  
